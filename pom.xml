@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.woods</groupId>
+    <artifactId>data-lineage</artifactId>
+    <version>1.0</version>
+    <properties>
+        <scala.version>2.11.5</scala.version>
+        <kafka.version>0.10.1.1</kafka.version>
+        <spark.version>2.4.2</spark.version>
+        <hadoop.version>2.7.1</hadoop.version>
+        <hbase.version>1.1.2</hbase.version>
+        <jdbc.version>5.1.46</jdbc.version>
+        <hive.version>1.1.0</hive.version>
+        <spark.scala.version>2.11</spark.scala.version>
+    </properties>
+
+
+
+    <dependencies>
+
+        <!--&lt;!&ndash; https://mvnrepository.com/artifact/org.antlr/antlr4-runtime &ndash;&gt;-->
+        <!--<dependency>-->
+        <!--<groupId>org.antlr</groupId>-->
+        <!--<artifactId>antlr4-runtime</artifactId>-->
+        <!--<version>4.7</version>-->
+        <!--</dependency>-->
+
+        <dependency>
+        <groupId>org.apache.hadoop</groupId>
+        <artifactId>hadoop-client</artifactId>
+        <version>${hadoop.version}</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/antlr/antlr -->
+        <dependency>
+            <groupId>antlr</groupId>
+            <artifactId>antlr</artifactId>
+            <version>2.7.7</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.hive/hive-exec -->
+        <dependency>
+            <groupId>org.apache.hive</groupId>
+            <artifactId>hive-exec</artifactId>
+            <version>${hive.version}</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.18</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.jetbrains</groupId>
+            <artifactId>annotations</artifactId>
+            <version>15.0</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/junit/junit -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.6.2</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
