@@ -1,9 +1,9 @@
-import bean.ColLine;
-import bean.SQLResult;
+import com.woods.hiveparse1.bean.ColLine;
+import com.woods.hiveparse1.bean.SQLResult;
 import org.junit.Before;
 import org.junit.Test;
-import parser.LineParser;
-import util.PropertyFileUtil;
+import com.woods.hiveparse1.parser.LineParser;
+import com.woods.hiveparse1.util.PropertyFileUtil;
 
 import java.util.HashSet;
 import java.util.LinkedHashSet;
